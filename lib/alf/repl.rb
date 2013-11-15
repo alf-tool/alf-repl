@@ -17,6 +17,7 @@ module Alf
     end
 
     def self.launch
+      require_relative 'repl/service'
       x = Class.new(Sinatra::Base) do
         def call(env)
           Alf::Repl::Service.call(env)
@@ -27,6 +28,3 @@ module Alf
 
   end # module Repl
 end # module Alf
-require_relative 'repl/ext'
-require_relative 'repl/webapp'
-require_relative 'repl/service'

@@ -1,5 +1,6 @@
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
 require 'alf-repl'
+require 'alf/repl/service'
 require "rspec"
 require 'rack/test'
 

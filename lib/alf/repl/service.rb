@@ -1,3 +1,13 @@
+require "alf-core"
+require "alf-rack"
+require "alf/rack/query"
+require "rack"
+require "rack/robustness"
+require "sprockets"
+
+require_relative 'nocache'
+require_relative 'webapp'
+
 module Alf
   module Repl
     Service = ::Rack::Builder.new do

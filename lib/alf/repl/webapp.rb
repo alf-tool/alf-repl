@@ -1,4 +1,6 @@
 require 'sinatra/base'
+require "wlang"
+require "wlang/tilt"
 module Alf
   module Repl
     class WebApp < Sinatra::Base

@@ -1,5 +1,6 @@
 module Rack
   class Nocache
+
     def initialize(app)
       @app = app
     end
@@ -23,5 +24,6 @@ module Rack
     def patch_response_headers(env)
       env.reject{|k,v| k =~ /^ETag$/i }.merge(CACHE_BUSTER)
     end
+
   end
 end
