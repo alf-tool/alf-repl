@@ -35,7 +35,7 @@ module Alf
           cfg.database = Repl.database
         end
         run ::Alf::Rack::Query.new{|q|
-          q.type_check = true
+          q.type_check = false
           q.catch_all  = false
         }
       end
