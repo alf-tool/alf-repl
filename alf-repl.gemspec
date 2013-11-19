@@ -16,6 +16,7 @@ Gem::Specification.new do |s|
                  inject([]){|files, pattern| files + Dir[File.join(here, pattern.strip)]}.
                  collect{|x| x[(1+here.size)..-1]}
 
+
   s.add_development_dependency("rake", "~> 10.1")
   s.add_development_dependency("rspec", "~> 2.14")
   s.add_development_dependency("rack-test", "~> 0.6.1")
@@ -24,7 +25,7 @@ Gem::Specification.new do |s|
   s.add_dependency("rack-robustness", "~> 1.1")
   s.add_dependency("wlang", "~> 2.2")
   s.add_dependency("sprockets", "~> 2.10")
-  s.add_dependency("alf-core", "0.15.1")
-  s.add_dependency("alf-rack", "0.15.1")
+  s.add_dependency("alf-core", "0.16.0")
+  s.add_dependency("alf-rack", "0.16.0")
 
 end
