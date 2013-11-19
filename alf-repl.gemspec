@@ -21,6 +21,8 @@ Gem::Specification.new do |s|
   s.add_dependency("alf-core", "~> 0.15.1")
   s.add_dependency("alf-rack", "~> 0.15.0")
   s.add_dependency("sinatra", "~> 1.4")
+  s.add_dependency("rack", "~> 1.5")
   s.add_dependency("rack-robustness", "~> 1.1")
   s.add_dependency("wlang", "~> 2.2")
+  s.add_dependency("sprockets", "~> 2.10")
 end
