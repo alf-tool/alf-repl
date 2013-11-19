@@ -15,7 +15,4 @@ group :development do
   gem "rake", "~> 10.1"
   gem "rspec", "~> 2.14"
   gem "rack-test", "~> 0.6.1"
-
-  gem "alf-repl",  path: "."
-  gem "alf-shell", path: "../alf-shell"
 end

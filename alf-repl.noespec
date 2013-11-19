@@ -2,11 +2,15 @@ template-info:
   name: alf.noe
   version: 0.1.0
   manifest:
+    lib/alf/__lower__/loader.rb:
+      safe-override: false
     spec/test___lower__.rb:
       ignore: true
     tasks/test.rake:
       safe-override: false
     Gemfile:
+      safe-override: false
+    Gemfile.ci:
       safe-override: false
 variables:
   lower:
@@ -25,8 +29,6 @@ variables:
     - http://github.com/blambeau/alf-sql
     - http://github.com/blambeau/alf
   dependencies:
-    - {name: alf-core,        version: "~> 0.15.1", groups: [runtime]}
-    - {name: alf-rack,        version: "~> 0.15.0", groups: [runtime]}
     - {name: sinatra,         version: "~> 1.4",    groups: [runtime]}
     - {name: rack,            version: "~> 1.5",    groups: [runtime]}
     - {name: rack-robustness, version: "~> 1.1",    groups: [runtime]}
@@ -35,3 +37,6 @@ variables:
     - {name: rake,            version: "~> 10.1",   groups: [development]}
     - {name: rspec,           version: "~> 2.14",   groups: [development]}
     - {name: rack-test,       version: "~> 0.6.1",  groups: [development]}
+  depends:
+    - {name: alf-core, groups: [runtime]}
+    - {name: alf-rack, groups: [runtime]}
