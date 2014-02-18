@@ -1,4 +1,4 @@
-# 0.15.1 / FIX ME
+# 0.16.0 / FIX ME
 
 * Enhancements
 
