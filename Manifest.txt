@@ -10,3 +10,4 @@ Rakefile
 README.md
 spec/**/*
 tasks/**/*
+assets/**/*
