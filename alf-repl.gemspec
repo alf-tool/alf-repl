@@ -25,7 +25,7 @@ Gem::Specification.new do |s|
   s.add_dependency("rack-robustness", "~> 1.1")
   s.add_dependency("wlang", "~> 2.2")
   s.add_dependency("sprockets", "~> 2.10")
-  s.add_dependency("alf-core", "0.16.2")
-  s.add_dependency("alf-rack", "0.16.2")
+  s.add_dependency("alf-core", "0.16.3")
+  s.add_dependency("alf-rack", "0.16.3")
 
 end
