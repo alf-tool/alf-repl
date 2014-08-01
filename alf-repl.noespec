@@ -18,7 +18,7 @@ variables:
   upper:
     Repl
   version:
-    0.16.3
+    0.17.0
   summary:
     Read-Eval-Print-Loop (web) for Alf
   description: |-
